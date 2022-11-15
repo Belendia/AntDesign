@@ -1,17 +1,23 @@
-import { Button } from "antd";
+import React from "react";
+import { Layout } from "antd";
+import AppHeader from "./components/common/header";
+import "./App.css";
+
+const { Header, Content } = Layout;
 
 import "antd/dist/antd.css";
+import AppHome from "./views/home";
 
 function App() {
   return (
-    <>
-      <Button type="primary">Primary Button</Button>
-      <Button>Default Button</Button>
-      <Button type="dashed">Dashed Button</Button>
-      <br />
-      <Button type="text">Text Button</Button>
-      <Button type="link">Link Button</Button>
-    </>
+    <Layout className="mainLayout">
+      <Header>
+        <AppHeader />
+      </Header>
+      <Content>
+        <AppHome />
+      </Content>
+    </Layout>
   );
 }
 
