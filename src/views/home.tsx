@@ -1,4 +1,5 @@
 import AppAbout from "../components/home/about";
+import AppFeature from "../components/home/feature";
 import AppHero from "../components/home/hero";
 
 function AppHome() {
@@ -6,6 +7,7 @@ function AppHome() {
     <div className="main">
       <AppHero />
       <AppAbout />
+      <AppFeature />
     </div>
   );
 }
