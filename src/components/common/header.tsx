@@ -41,9 +41,9 @@ function AppHeader() {
             placement="right"
             closable={false}
             onClose={onClose}
-            visible={visible}
+            open={visible}
           >
-            <Anchor targetOffset="65">
+            <Anchor targetOffset={65}>
               <Link href="#hero" title="Home" />
               <Link href="#about" title="About" />
               <Link href="#feature" title="Features" />
